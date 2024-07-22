@@ -9,15 +9,129 @@
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="./assets/images/favicon-32x32.png"
+      href="./images/favicon-32x32.png"
     />
     <link rel="stylesheet" href="./src/output.css" />
 
     <title>Frontend Mentor | Results summary component</title>
   </head>
-  <body>
-    Your Result 76 of 100 Great You scored higher than 65% of the people who
-    have taken these tests. Summary Reaction 80 / 100 Memory 92 / 100 Verbal 61
-    / 100 Visual 72 / 100 Continue
+  <body class="h-screen flex justify-center md:items-center md:bg-pale-blue">
+    <main
+      class="md:max-w-[736px] md:rounded-[32px] shadow-custom flex flex-col md:flex-row bg-white"
+    >
+      <div
+        class="bg-gradient-to-b from-light-slate-blue to-light-royal-blue md:rounded-[32px] rounded-bl-[32px] rounded-br-[32px] flex flex-col items-center basis-1/2 px-14 pb-10 md:pb-14 pt-6 md:pt-9"
+      >
+        <h1 class="font-bold text-lg md:text-2xl text-light-lavender mb-9">
+          Your Result
+        </h1>
+        <div
+          class="bg-gradient-to-b from-violet-blue to-persian-blue flex flex-col items-center justify-center rounded-full size-[140px] md:size-[200px] mb-6 md:mb-7"
+        >
+          <h2
+            class="font-extrabold text-[56px] md:text-7xl text-white leading-[72px]"
+          >
+            76
+          </h2>
+          <p class="text-base md:text-lg font-bold text-light-lavender">
+            of 100
+          </p>
+        </div>
+        <h2 class="text-white text-2xl md:text-[32px] font-bold mb-3">Great</h2>
+        <p
+          class="text-base md:text-lg font-medium text-light-lavender text-center"
+        >
+          You scored higher than 65% of the people who have taken these tests.
+        </p>
+      </div>
+      <!-- Left content -->
+      <div class="basis-1/2 flex flex-col pt-9 px-10 pb-11">
+        <h2
+          class="text-dark-gray-blue font-bold text-lg md:text-2xl mb-6 md:mb-7"
+        >
+          Summary
+        </h2>
+        <div class="flex flex-col gap-4 mb-6 md:mb-10">
+          <div
+            class="flex items-center justify-between p-4 rounded-xl bg-[#fff6f6]"
+          >
+            <div class="flex items-center gap-3">
+              <img
+                src="./images/icon-reaction.svg"
+                alt="icon reaction"
+                class="size-5"
+              />
+              <p class="text-base md:text-lg font-medium text-light-red">
+                Reaction
+              </p>
+            </div>
+            <div class="text-base md:text-lg font-bold text-dark-gray-blue">
+              80 <span class="opacity-50"> / 100</span>
+            </div>
+          </div>
+          <!-- One summary item -->
+          <div
+            class="flex items-center justify-between p-4 rounded-xl bg-[#fffbf4]"
+          >
+            <div class="flex items-center gap-3">
+              <img
+                src="./images/icon-memory.svg"
+                alt="icon memory"
+                class="size-5"
+              />
+              <p class="text-base md:text-lg font-medium text-orangey-yellow">
+                Memory
+              </p>
+            </div>
+            <div class="text-base md:text-lg font-bold text-dark-gray-blue">
+              92 <span class="opacity-50"> / 100</span>
+            </div>
+          </div>
+          <!-- One summary item -->
+          <div
+            class="flex items-center justify-between p-4 rounded-xl bg-[#f2fcf9]"
+          >
+            <div class="flex items-center gap-3">
+              <img
+                src="./images/icon-verbal.svg"
+                alt="icon verbal"
+                class="size-5"
+              />
+              <p class="text-base md:text-lg font-medium text-green-teal">
+                Verbal
+              </p>
+            </div>
+            <div class="text-base md:text-lg font-bold text-dark-gray-blue">
+              61 <span class="opacity-50"> / 100</span>
+            </div>
+          </div>
+          <!-- One summary item -->
+          <div
+            class="flex items-center justify-between p-4 rounded-xl bg-[#f3f4fd]"
+          >
+            <div class="flex items-center gap-3">
+              <img
+                src="./images/icon-visual.svg"
+                alt="icon visual"
+                class="size-5"
+              />
+              <p class="text-base md:text-lg font-medium text-cobalt-blue">
+                Visual
+              </p>
+            </div>
+            <div class="text-base md:text-lg font-bold text-dark-gray-blue">
+              73 <span class="opacity-50"> / 100</span>
+            </div>
+          </div>
+          <!-- One summary item -->
+        </div>
+        <button
+          class="text-white bg-dark-gray-blue py-4 px-[106px] rounded-[128px] font-bold text-lg hover:bg-gradient-to-b hover:from-light-slate-blue hover:to-light-royal-blue transition-all duration-500"
+        >
+          Continue
+        </button>
+      </div>
+      <!-- Right content -->
+    </main>
   </body>
 </html>

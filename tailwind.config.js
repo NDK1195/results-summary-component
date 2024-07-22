@@ -16,6 +16,9 @@ module.exports = {
         'violet-blue': 'hsla(256, 72%, 46%, 1)',
         'persian-blue': 'hsla(241, 72%, 46%, 0)',
       },
+      boxShadow: {
+        custom: '0px 30px 60px 0px rgba(61, 108, 236, 0.15)',
+      },
     },
   },
   plugins: [],
